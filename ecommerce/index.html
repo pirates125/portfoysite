@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore - Modern E-Ticaret Platformu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>TechStore</h2>
+        </div>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link">Ana Sayfa</a>
+          <a href="#products" class="nav-link">Ürünler</a>
+          <a href="#categories" class="nav-link">Kategoriler</a>
+          <a href="#about" class="nav-link">Hakkımızda</a>
+          <a href="#contact" class="nav-link">İletişim</a>
+        </div>
+        <div class="nav-actions">
+          <div class="search-box">
+            <input type="text" placeholder="Ürün ara..." class="search-input" />
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="nav-icons">
+            <button class="nav-icon" id="wishlist-btn">
+              <i class="far fa-heart"></i>
+              <span class="badge" id="wishlist-count">0</span>
+            </button>
+            <button class="nav-icon" id="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge" id="cart-count">0</span>
+            </button>
+          </div>
+          <div class="nav-toggle">
+            <button class="theme-toggle" id="theme-toggle">
+              <i class="fas fa-moon"></i>
+            </button>
+            <button class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="text-gradient">En İyi</span> Teknoloji <br />Ürünleri
+            Burada
+          </h1>
+          <p class="hero-subtitle">Kaliteli, Uygun Fiyatlı, Hızlı Teslimat</p>
+          <p class="hero-description">
+            En son teknoloji ürünlerini keşfedin. Telefon, laptop, aksesuar ve
+            daha fazlası. Güvenli ödeme, hızlı kargo ve müşteri memnuniyeti
+            garantisi.
+          </p>
+          <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary">Alışverişe Başla</a>
+            <a href="#categories" class="btn btn-secondary">Kategorileri Gör</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <i class="fas fa-laptop"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="categories">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Kategoriler</h2>
+          <p class="section-subtitle">İhtiyacınıza uygun kategoriyi seçin</p>
+        </div>
+        <div class="categories-grid">
+          <div class="category-card" data-category="phones">
+            <div class="category-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Telefonlar</h3>
+            <p>iPhone, Samsung, Xiaomi ve daha fazlası</p>
+            <span class="product-count">150+ Ürün</span>
+          </div>
+          <div class="category-card" data-category="laptops">
+            <div class="category-icon">
+              <i class="fas fa-laptop"></i>
+            </div>
+            <h3>Laptoplar</h3>
+            <p>Gaming, iş, öğrenci laptopları</p>
+            <span class="product-count">80+ Ürün</span>
+          </div>
+          <div class="category-card" data-category="accessories">
+            <div class="category-icon">
+              <i class="fas fa-headphones"></i>
+            </div>
+            <h3>Aksesuarlar</h3>
+            <p>Kulaklık, kılıf, şarj cihazı</p>
+            <span class="product-count">200+ Ürün</span>
+          </div>
+          <div class="category-card" data-category="gaming">
+            <div class="category-icon">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <h3>Gaming</h3>
+            <p>Oyun konsolları ve aksesuarları</p>
+            <span class="product-count">60+ Ürün</span>
+          </div>
+          <div class="category-card" data-category="home">
+            <div class="category-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h3>Ev & Yaşam</h3>
+            <p>Akıllı ev ürünleri</p>
+            <span class="product-count">90+ Ürün</span>
+          </div>
+          <div class="category-card" data-category="audio">
+            <div class="category-icon">
+              <i class="fas fa-music"></i>
+            </div>
+            <h3>Ses & Müzik</h3>
+            <p>Hoparlör, mikrofon, ses kartı</p>
+            <span class="product-count">120+ Ürün</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="featured-products">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Öne Çıkan Ürünler</h2>
+          <p class="section-subtitle">En popüler ve yeni ürünlerimiz</p>
+        </div>
+        <div class="products-grid">
+          <div class="product-card" data-product="1">
+            <div class="product-image">
+              <div class="product-placeholder">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="product-badge">Yeni</div>
+              <div class="product-actions">
+                <button class="action-btn wishlist-btn" data-product="1">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="action-btn quick-view-btn" data-product="1">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Telefon</div>
+              <h3>iPhone 15 Pro Max</h3>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="rating-count">(128)</span>
+              </div>
+              <div class="product-price">
+                <span class="current-price">₺45.999</span>
+                <span class="old-price">₺49.999</span>
+              </div>
+              <button class="btn btn-primary add-to-cart" data-product="1">
+                <i class="fas fa-shopping-cart"></i>
+                Sepete Ekle
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card" data-product="2">
+            <div class="product-image">
+              <div class="product-placeholder">
+                <i class="fas fa-laptop"></i>
+              </div>
+              <div class="product-badge sale">%20 İndirim</div>
+              <div class="product-actions">
+                <button class="action-btn wishlist-btn" data-product="2">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="action-btn quick-view-btn" data-product="2">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Laptop</div>
+              <h3>MacBook Pro M3</h3>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <span class="rating-count">(95)</span>
+              </div>
+              <div class="product-price">
+                <span class="current-price">₺35.999</span>
+                <span class="old-price">₺44.999</span>
+              </div>
+              <button class="btn btn-primary add-to-cart" data-product="2">
+                <i class="fas fa-shopping-cart"></i>
+                Sepete Ekle
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card" data-product="3">
+            <div class="product-image">
+              <div class="product-placeholder">
+                <i class="fas fa-headphones"></i>
+              </div>
+              <div class="product-actions">
+                <button class="action-btn wishlist-btn" data-product="3">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="action-btn quick-view-btn" data-product="3">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Aksesuar</div>
+              <h3>AirPods Pro 2</h3>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="rating-count">(203)</span>
+              </div>
+              <div class="product-price">
+                <span class="current-price">₺7.999</span>
+              </div>
+              <button class="btn btn-primary add-to-cart" data-product="3">
+                <i class="fas fa-shopping-cart"></i>
+                Sepete Ekle
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card" data-product="4">
+            <div class="product-image">
+              <div class="product-placeholder">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <div class="product-badge">Popüler</div>
+              <div class="product-actions">
+                <button class="action-btn wishlist-btn" data-product="4">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="action-btn quick-view-btn" data-product="4">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Gaming</div>
+              <h3>PlayStation 5</h3>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <span class="rating-count">(156)</span>
+              </div>
+              <div class="product-price">
+                <span class="current-price">₺18.999</span>
+              </div>
+              <button class="btn btn-primary add-to-cart" data-product="4">
+                <i class="fas fa-shopping-cart"></i>
+                Sepete Ekle
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card" data-product="5">
+            <div class="product-image">
+              <div class="product-placeholder">
+                <i class="fas fa-tablet-alt"></i>
+              </div>
+              <div class="product-actions">
+                <button class="action-btn wishlist-btn" data-product="5">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="action-btn quick-view-btn" data-product="5">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Tablet</div>
+              <h3>iPad Air 5</h3>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="rating-count">(87)</span>
+              </div>
+              <div class="product-price">
+                <span class="current-price">₺12.999</span>
+              </div>
+              <button class="btn btn-primary add-to-cart" data-product="5">
+                <i class="fas fa-shopping-cart"></i>
+                Sepete Ekle
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card" data-product="6">
+            <div class="product-image">
+              <div class="product-placeholder">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <div class="product-badge sale">%15 İndirim</div>
+              <div class="product-actions">
+                <button class="action-btn wishlist-btn" data-product="6">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="action-btn quick-view-btn" data-product="6">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Masaüstü</div>
+              <h3>iMac 24" M2</h3>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <span class="rating-count">(42)</span>
+              </div>
+              <div class="product-price">
+                <span class="current-price">₺28.999</span>
+                <span class="old-price">₺33.999</span>
+              </div>
+              <button class="btn btn-primary add-to-cart" data-product="6">
+                <i class="fas fa-shopping-cart"></i>
+                Sepete Ekle
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3>Hızlı Kargo</h3>
+            <p>24 saat içinde kargo, aynı gün teslimat seçenekleri</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Güvenli Ödeme</h3>
+            <p>SSL sertifikalı güvenli ödeme sistemi</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-undo"></i>
+            </div>
+            <h3>Kolay İade</h3>
+            <p>30 gün içinde ücretsiz iade ve değişim</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>7/24 Destek</h3>
+            <p>Müşteri hizmetleri her zaman yanınızda</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h2>Özel Fırsatları Kaçırma!</h2>
+            <p>
+              E-posta bültenimize abone ol, özel indirimler ve yeni ürün
+              haberlerini ilk sen al.
+            </p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="E-posta adresiniz" required />
+            <button type="submit" class="btn btn-primary">Abone Ol</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>TechStore Hakkında</h2>
+            <p>
+              TechStore, 2020 yılından beri teknoloji severlere en kaliteli
+              ürünleri en uygun fiyatlarla sunan güvenilir bir e-ticaret
+              platformudur.
+            </p>
+            <p>
+              Müşteri memnuniyetini ön planda tutarak, sadece orijinal ve
+              kaliteli ürünleri satışa sunuyoruz. Geniş ürün yelpazemiz ve uzman
+              ekibimizle size en iyi hizmeti vermeyi hedefliyoruz.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <h3>50K+</h3>
+                <p>Mutlu Müşteri</p>
+              </div>
+              <div class="stat">
+                <h3>1000+</h3>
+                <p>Ürün Çeşidi</p>
+              </div>
+              <div class="stat">
+                <h3>99%</h3>
+                <p>Müşteri Memnuniyeti</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-placeholder">
+              <i class="fas fa-store"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">İletişim</h2>
+          <p class="section-subtitle">Bizimle iletişime geçin</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Bizimle Konuşun</h3>
+            <p>
+              Sorularınız, önerileriniz veya şikayetleriniz için bize
+              ulaşabilirsiniz.
+            </p>
+            <div class="contact-items">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>E-posta</h4>
+                  <p>info@techstore.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Telefon</h4>
+                  <p>+90 555 123 45 67</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Adres</h4>
+                  <p>İstanbul, Türkiye</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Adınız"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="E-posta Adresiniz"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Konu"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Mesajınız"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Mesaj Gönder
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>TechStore</h3>
+            <p>
+              En iyi teknoloji ürünleri, en uygun fiyatlarla. Güvenli alışveriş,
+              hızlı teslimat.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Kategoriler</h4>
+            <ul>
+              <li><a href="#">Telefonlar</a></li>
+              <li><a href="#">Laptoplar</a></li>
+              <li><a href="#">Aksesuarlar</a></li>
+              <li><a href="#">Gaming</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Müşteri Hizmetleri</h4>
+            <ul>
+              <li><a href="#">Sipariş Takibi</a></li>
+              <li><a href="#">İade & Değişim</a></li>
+              <li><a href="#">Kargo Bilgileri</a></li>
+              <li><a href="#">SSS</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Bülten</h4>
+            <p>Özel fırsatları kaçırma</p>
+            <form class="footer-newsletter">
+              <input type="email" placeholder="E-posta" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 TechStore. Tüm hakları saklıdır.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-header">
+        <h3>Sepetim</h3>
+        <button class="close-cart" id="close-cart">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <!-- Cart items will be added here dynamically -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Toplam: <span id="cart-total">₺0</span></span>
+        </div>
+        <button class="btn btn-primary checkout-btn">Siparişi Tamamla</button>
+      </div>
+    </div>
+
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-sidebar" id="wishlist-sidebar">
+      <div class="wishlist-header">
+        <h3>Favorilerim</h3>
+        <button class="close-wishlist" id="close-wishlist">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="wishlist-items" id="wishlist-items">
+        <!-- Wishlist items will be added here dynamically -->
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

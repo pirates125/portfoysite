@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaan Oba - Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Kaan Oba</h2>
+        </div>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link">Ana Sayfa</a>
+          <a href="#about" class="nav-link">Hakkımda</a>
+          <a href="#skills" class="nav-link">Yetenekler</a>
+          <a href="#projects" class="nav-link">Projeler</a>
+          <a href="#contact" class="nav-link">İletişim</a>
+        </div>
+        <div class="nav-toggle">
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="text-gradient">Merhaba, Ben</span>
+              <br />Kaan Oba
+            </h1>
+            <p class="hero-subtitle">Web Developer & UI/UX Designer</p>
+            <p class="hero-description">
+              Modern, kullanıcı dostu ve performanslı web siteleri tasarlıyorum.
+              Her projede detaylara önem vererek, müşterilerimin ihtiyaçlarını
+              en iyi şekilde karşılayan çözümler sunuyorum.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">Projelerimi Gör</a>
+              <a href="#contact" class="btn btn-secondary">İletişime Geç</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+              <img src="profile.jpg" alt="Kaan Oba" class="profile-img" />
+              <div class="image-bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Hakkımda</h2>
+          <p class="section-subtitle">Kim olduğumu ve ne yaptığımı öğrenin</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Yaratıcı Web Çözümleri</h3>
+            <p>
+              1.5 yılı aşkın süredir web geliştirme alanında çalışıyorum.
+              Frontend teknolojileri konusunda uzmanlaşmış, kullanıcı deneyimini
+              ön planda tutan projeler geliştiriyorum.
+            </p>
+            <p>
+              HTML, CSS, JavaScript ve modern framework'ler kullanarak
+              responsive, hızlı ve SEO uyumlu web siteleri oluşturuyorum. Her
+              projede müşteri memnuniyetini sağlamak için detaylara önem
+              veriyorum.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <h4>2</h4>
+                <p>Tamamlanan Proje</p>
+              </div>
+              <div class="stat">
+                <h4>1.5+</h4>
+                <p>Yıl Deneyim</p>
+              </div>
+              <div class="stat">
+                <h4>100%</h4>
+                <p>Müşteri Memnuniyeti</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-placeholder">
+              <i class="fas fa-code"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Yeteneklerim</h2>
+          <p class="section-subtitle">Kullandığım teknolojiler ve araçlar</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>MongoDB</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-server"></i>
+                <span>Express.js</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Araçlar</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Responsive Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Projelerim</h2>
+          <p class="section-subtitle">Son çalışmalarım ve portfolyom</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="ecommerce/index.html" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/kaanoba/portfoy"
+                    class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>TechStore - E-Ticaret Sitesi</h3>
+              <p>
+                Modern teknoloji ürünleri e-ticaret platformu. Sepet yönetimi,
+                favori listesi ve responsive tasarım.
+              </p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>LocalStorage</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-blog"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="blog/index.html" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/kaanoba/portfoy"
+                    class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>TechBlog - Blog Platformu</h3>
+              <p>
+                Modern teknoloji blogu. Makale listesi, kategoriler, arama
+                fonksiyonu ve newsletter aboneliği.
+              </p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Responsive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">İletişim</h2>
+          <p class="section-subtitle">
+            Projeleriniz için benimle iletişime geçin
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Hadi Konuşalım</h3>
+            <p>
+              Yeni projeleriniz için benimle iletişime geçmekten çekinmeyin. Her
+              zaman yaratıcı çözümler üretmeye hazırım.
+            </p>
+            <div class="contact-items">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>E-posta</h4>
+                  <p>piratescarri1@hotmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Telefon</h4>
+                  <p>+90 543 380 33 09</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Konum</h4>
+                  <p>İzmir, Türkiye</p>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Adınız"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="E-posta Adresiniz"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Konu"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Mesajınız"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Mesaj Gönder
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; 2024 Kaan Oba. Tüm hakları saklıdır.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Ana Sayfa</a>
+            <a href="#about">Hakkımda</a>
+            <a href="#skills">Yetenekler</a>
+            <a href="#projects">Projeler</a>
+            <a href="#contact">İletişim</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

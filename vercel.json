@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "name": "kaan-oba-portfolio",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/blog",
+      "dest": "/blog/index.html"
+    },
+    {
+      "src": "/ecommerce",
+      "dest": "/ecommerce/index.html"
+    }
+  ]
+}
